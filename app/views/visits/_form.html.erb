@@ -1,0 +1,49 @@
+<%= form_for(@visit) do |f| %>
+  <% if @visit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@visit.errors.count, "error") %> prohibited this visit from being saved:</h2>
+
+      <ul>
+      <% @visit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :first_action_time %><br>
+    <%= f.datetime_select :first_action_time %>
+  </div>
+  <div class="field">
+    <%= f.label :last_action_time %><br>
+    <%= f.datetime_select :last_action_time %>
+  </div>
+  <div class="field">
+    <%= f.label :entry_url %><br>
+    <%= f.text_field :entry_url %>
+  </div>
+  <div class="field">
+    <%= f.label :exit_url %><br>
+    <%= f.text_field :exit_url %>
+  </div>
+  <div class="field">
+    <%= f.label :total_events %><br>
+    <%= f.number_field :total_events %>
+  </div>
+  <div class="field">
+    <%= f.label :total_time %><br>
+    <%= f.datetime_select :total_time %>
+  </div>
+  <div class="field">
+    <%= f.label :total_searches %><br>
+    <%= f.number_field :total_searches %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

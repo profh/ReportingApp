@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  visit_action_id: 1
+  event_category: MyString
+  event_action: MyString
+  event_label: MyString
+  event_value: MyString
+  custom: MyString
+
+two:
+  visit_action_id: 1
+  event_category: MyString
+  event_action: MyString
+  event_label: MyString
+  event_value: MyString
+  custom: MyString

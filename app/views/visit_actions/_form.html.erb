@@ -1,0 +1,57 @@
+<%= form_for(@visit_action) do |f| %>
+  <% if @visit_action.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@visit_action.errors.count, "error") %> prohibited this visit_action from being saved:</h2>
+
+      <ul>
+      <% @visit_action.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :visit_id %><br>
+    <%= f.number_field :visit_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :server_time %><br>
+    <%= f.datetime_select :server_time %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :referrer_url %><br>
+    <%= f.text_field :referrer_url %>
+  </div>
+  <div class="field">
+    <%= f.label :page_title %><br>
+    <%= f.text_field :page_title %>
+  </div>
+  <div class="field">
+    <%= f.label :page %><br>
+    <%= f.text_field :page %>
+  </div>
+  <div class="field">
+    <%= f.label :entity %><br>
+    <%= f.text_field :entity %>
+  </div>
+  <div class="field">
+    <%= f.label :subject %><br>
+    <%= f.text_field :subject %>
+  </div>
+  <div class="field">
+    <%= f.label :total_time_on_action %><br>
+    <%= f.datetime_select :total_time_on_action %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

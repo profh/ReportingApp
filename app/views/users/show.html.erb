@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User day since last:</strong>
+  <%= @user.user_day_since_last %>
+</p>
+
+<p>
+  <strong>User day since first:</strong>
+  <%= @user.user_day_since_first %>
+</p>
+
+<p>
+  <strong>User returning:</strong>
+  <%= @user.user_returning %>
+</p>
+
+<p>
+  <strong>User visit count:</strong>
+  <%= @user.user_visit_count %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

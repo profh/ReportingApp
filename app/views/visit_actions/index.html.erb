@@ -1,0 +1,43 @@
+<h1>Listing visit_actions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Visit</th>
+      <th>User</th>
+      <th>Server time</th>
+      <th>Url</th>
+      <th>Referrer url</th>
+      <th>Page title</th>
+      <th>Page</th>
+      <th>Entity</th>
+      <th>Subject</th>
+      <th>Total time on action</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @visit_actions.each do |visit_action| %>
+      <tr>
+        <td><%= visit_action.visit_id %></td>
+        <td><%= visit_action.user_id %></td>
+        <td><%= visit_action.server_time %></td>
+        <td><%= visit_action.url %></td>
+        <td><%= visit_action.referrer_url %></td>
+        <td><%= visit_action.page_title %></td>
+        <td><%= visit_action.page %></td>
+        <td><%= visit_action.entity %></td>
+        <td><%= visit_action.subject %></td>
+        <td><%= visit_action.total_time_on_action %></td>
+        <td><%= link_to 'Show', visit_action %></td>
+        <td><%= link_to 'Edit', edit_visit_action_path(visit_action) %></td>
+        <td><%= link_to 'Destroy', visit_action, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Visit action', new_visit_action_path %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  first_action_time: 2014-06-20 12:55:08
+  last_action_time: 2014-06-20 12:55:08
+  entry_url: MyString
+  exit_url: MyString
+  total_events: 1
+  total_time: 2014-06-20 12:55:08
+  total_searches: 1
+
+two:
+  user_id: 1
+  first_action_time: 2014-06-20 12:55:08
+  last_action_time: 2014-06-20 12:55:08
+  entry_url: MyString
+  exit_url: MyString
+  total_events: 1
+  total_time: 2014-06-20 12:55:08
+  total_searches: 1

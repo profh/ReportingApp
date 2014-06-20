@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_day_since_last: 2014-06-20 12:52:49
+  user_day_since_first: 2014-06-20 12:52:49
+  user_returning: false
+  user_visit_count: 1
+
+two:
+  user_day_since_last: 2014-06-20 12:52:49
+  user_day_since_first: 2014-06-20 12:52:49
+  user_returning: false
+  user_visit_count: 1

@@ -1,0 +1,2 @@
+module VisitActionsHelper
+end

@@ -1,0 +1,39 @@
+<h1>Listing visits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>First action time</th>
+      <th>Last action time</th>
+      <th>Entry url</th>
+      <th>Exit url</th>
+      <th>Total events</th>
+      <th>Total time</th>
+      <th>Total searches</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @visits.each do |visit| %>
+      <tr>
+        <td><%= visit.user_id %></td>
+        <td><%= visit.first_action_time %></td>
+        <td><%= visit.last_action_time %></td>
+        <td><%= visit.entry_url %></td>
+        <td><%= visit.exit_url %></td>
+        <td><%= visit.total_events %></td>
+        <td><%= visit.total_time %></td>
+        <td><%= visit.total_searches %></td>
+        <td><%= link_to 'Show', visit %></td>
+        <td><%= link_to 'Edit', edit_visit_path(visit) %></td>
+        <td><%= link_to 'Destroy', visit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Visit', new_visit_path %>

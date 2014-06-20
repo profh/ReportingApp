@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Visit:</strong>
+  <%= @visit_action.visit_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @visit_action.user_id %>
+</p>
+
+<p>
+  <strong>Server time:</strong>
+  <%= @visit_action.server_time %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @visit_action.url %>
+</p>
+
+<p>
+  <strong>Referrer url:</strong>
+  <%= @visit_action.referrer_url %>
+</p>
+
+<p>
+  <strong>Page title:</strong>
+  <%= @visit_action.page_title %>
+</p>
+
+<p>
+  <strong>Page:</strong>
+  <%= @visit_action.page %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @visit_action.entity %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @visit_action.subject %>
+</p>
+
+<p>
+  <strong>Total time on action:</strong>
+  <%= @visit_action.total_time_on_action %>
+</p>
+
+<%= link_to 'Edit', edit_visit_action_path(@visit_action) %> |
+<%= link_to 'Back', visit_actions_path %>

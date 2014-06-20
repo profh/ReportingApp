@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @visit.user_id %>
+</p>
+
+<p>
+  <strong>First action time:</strong>
+  <%= @visit.first_action_time %>
+</p>
+
+<p>
+  <strong>Last action time:</strong>
+  <%= @visit.last_action_time %>
+</p>
+
+<p>
+  <strong>Entry url:</strong>
+  <%= @visit.entry_url %>
+</p>
+
+<p>
+  <strong>Exit url:</strong>
+  <%= @visit.exit_url %>
+</p>
+
+<p>
+  <strong>Total events:</strong>
+  <%= @visit.total_events %>
+</p>
+
+<p>
+  <strong>Total time:</strong>
+  <%= @visit.total_time %>
+</p>
+
+<p>
+  <strong>Total searches:</strong>
+  <%= @visit.total_searches %>
+</p>
+
+<%= link_to 'Edit', edit_visit_path(@visit) %> |
+<%= link_to 'Back', visits_path %>
