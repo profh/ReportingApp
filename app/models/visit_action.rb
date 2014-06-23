@@ -4,7 +4,9 @@ class VisitAction < ActiveRecord::Base
 	has_one :performance 
 	has_one :event
 
-	# validations 
+	# validations
+	validates :visit_id, presence: true, numericality: { greater_than: 0, only_integer: true } 
+	validates :user_id, presence: true, numericality: { greater_than: 0, only_integer: true } 
 
 	# scopes 
 

@@ -6,6 +6,7 @@ class Visit < ActiveRecord::Base
 	has_one :browser
 
 	# validations 
+	validates :user_id, presence: true, numericality: { greater_than: 0, only_integer: true } 
 
 	# scopes 
 

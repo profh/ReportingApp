@@ -3,6 +3,7 @@ class Location < ActiveRecord::Base
 	belongs_to :visit
 
 	# validations 
+	validates :visit_id, presence: true, numericality: { greater_than: 0, only_integer: true }
 
 	# scopes 
 
