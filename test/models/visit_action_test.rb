@@ -1,7 +1,12 @@
 require 'test_helper'
 
 class VisitActionTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  # test relationships
+  should belong_to(:visit)
+  should have_one(:performance)
+  should have_one(:event)
+
+  # test validations
+
+  # set up contexts 
 end

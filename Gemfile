@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -37,4 +37,23 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+gem 'rspec-core', '2.14.7'
+
+# Testing gems
+group :test do
+  gem 'shoulda'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'mocha', require: false
+  gem 'simplecov'
+  gem 'turn'
+  gem 'single_test'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'capybara'
+  gem 'minitest'
+end
 

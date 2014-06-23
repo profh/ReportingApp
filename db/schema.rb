@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140620170232) do
+ActiveRecord::Schema.define(version: 20140623180012) do
 
   create_table "browsers", force: true do |t|
     t.integer  "visit_id"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20140620170232) do
   end
 
   create_table "performances", force: true do |t|
-    t.integer  "visit_id"
+    t.integer  "visit_action_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
