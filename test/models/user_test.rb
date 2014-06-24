@@ -14,4 +14,18 @@ class UserTest < ActiveSupport::TestCase
   should_not allow_value(3.14159).for(:user_visit_count)
 
   # set up contexts 
+  context "Within context" do
+    setup do
+      create_users
+    end
+
+    teardown do
+      delete_users
+    end
+
+    should "show that there are ten users" do
+      assert_equal 10, User.all.size
+    end
+
+  end
 end
