@@ -1,0 +1,1 @@
+ReportingApp::Application.config.secret_key_base = '8f669c12c332d583296cc2dc873200ba5171e37838ccc59a8b35d40dc80ac4873795695e3f637459e72e0b0b89014f5e9dcd32afd4df1aabf299681c76913134'

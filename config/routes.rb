@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+ReportingApp::Application.routes.draw do
   resources :performances
 
   resources :events
