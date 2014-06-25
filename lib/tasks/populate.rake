@@ -81,7 +81,7 @@ namespace :db do
 		user10.user_day_since_last = DateTime.new(2013,8,19)
 		user10.user_day_since_first = DateTime.new(2012,5,18)
 		user10.user_returning = true
-		user10.user_visit_count = 80
+		user10. user_visit_count = 80
 		user10.save!
 
 

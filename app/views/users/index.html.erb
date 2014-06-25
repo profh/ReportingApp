@@ -29,3 +29,38 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+
+<h1>User Scopes</h1>
+
+<table>
+
+  <tr>
+    <td>Number of users who used AB in the last month:</td>
+    <td><%= @users.last_month.size %></td>
+    <td> @users.last_month.size </td>
+  </tr>
+
+  <tr>
+    <td>Number of users who used AB in the last 6 months:</td>
+    <td><%= @users.last_6_months.size %></td>
+    <td> @users.last_6_month.size </td>
+  </tr>
+
+  <tr>
+    <td>Number of users who used AB in the last year:</td>
+    <td><%= @users.last_year.size %></td>
+    <td> @users.last_year.size </td>
+  </tr>
+
+  <tr>
+    <td>Percent of users who used AB in the last year:</td>
+    <td><%= (@users.last_year.size.to_f / @users.size) * 100 %>%</td>
+    <td> (@users.last_year.size.to_f / @users.size) * 100 </td>
+  </tr>
+
+  <tr>
+    <td>etc...</td>
+  </tr>
+
+</table>
+
