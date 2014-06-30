@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623180012) do
+ActiveRecord::Schema.define(version: 20140630195307) do
 
   create_table "browsers", force: true do |t|
     t.integer  "visit_id"
@@ -53,7 +53,6 @@ ActiveRecord::Schema.define(version: 20140623180012) do
 
   create_table "visit_actions", force: true do |t|
     t.integer  "visit_id"
-    t.integer  "user_id"
     t.datetime "server_time"
     t.string   "url"
     t.string   "referrer_url"
@@ -64,6 +63,7 @@ ActiveRecord::Schema.define(version: 20140623180012) do
     t.datetime "total_time_on_action"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "visits", force: true do |t|

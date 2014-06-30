@@ -13,6 +13,10 @@ ReportingApp::Application.routes.draw do
 
   resources :users
 
+  resources :page
+
+  get 'page/summary', to: 'page#summary', as: :summary
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

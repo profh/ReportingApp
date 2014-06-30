@@ -1,4 +1,4 @@
-namespace :db do 
+ namespace :db do 
 	desc "Erase and fill database"
 	# creating a rake task within db namespace called 'populate'
   	# executing 'rake db:populate' will cause this script to run
@@ -83,6 +83,30 @@ namespace :db do
 		user10.user_returning = true
 		user10. user_visit_count = 80
 		user10.save!
+
+		# Step 2: Create some visits
+		visit_u3_1 = FactoryGirl.create(:visit, user: user3, first_action_time: DateTime.new(2014,3,23,5,30), last_action_time: DateTime.new(2014,3,23,6,23))
+		visit_u3_2 = FactoryGirl.create(:visit, user: user3, first_action_time: DateTime.new(2014,3,24,4,30), last_action_time: DateTime.new(2014,3,24,6,23))
+		visit_u3_3 = FactoryGirl.create(:visit, user: user3, first_action_time: DateTime.new(2014,3,25,7,30), last_action_time: DateTime.new(2014,3,25,8,23))
+		visit_u3_4 = FactoryGirl.create(:visit, user: user3, first_action_time: DateTime.new(2014,3,26,8,30), last_action_time: DateTime.new(2014,3,26,6,23))
+		visit_u3_5 = FactoryGirl.create(:visit, user: user3, first_action_time: DateTime.new(2014,3,27,9,30), last_action_time: DateTime.new(2014,3,27,11,23))
+
+		visit_u4_1 = FactoryGirl.create(:visit, user: user4, first_action_time: DateTime.new(2013,3,23,5,32), last_action_time: DateTime.new(2013,3,23,6,56))
+		visit_u4_2 = FactoryGirl.create(:visit, user: user4, first_action_time: DateTime.new(2013,3,24,4,14), last_action_time: DateTime.new(2013,3,24,6,48))
+		visit_u4_3 = FactoryGirl.create(:visit, user: user4, first_action_time: DateTime.new(2013,3,25,7,19), last_action_time: DateTime.new(2013,3,25,8,37))
+
+		# Step 3: Create some visit actions
+		va_u3_v2_1 = FactoryGirl.create(:visit_action, visit: visit_u3_2, url: "AppBuilder")
+		va_u3_v2_2 = FactoryGirl.create(:visit_action, visit: visit_u3_2, url: "AppBuilder/products")
+		va_u3_v2_3 = FactoryGirl.create(:visit_action, visit: visit_u3_2, url: "AppBuilder/products/1")
+		va_u3_v2_4 = FactoryGirl.create(:visit_action, visit: visit_u3_2, url: "AppBuilder/products/12")
+
+		va_u3_v3_1 = FactoryGirl.create(:visit_action, visit: visit_u3_3, url: "AppBuilder")
+		va_u3_v3_2 = FactoryGirl.create(:visit_action, visit: visit_u3_3, url: "AppBuilder/products")
+		va_u3_v3_3 = FactoryGirl.create(:visit_action, visit: visit_u3_3, url: "AppBuilder/search")
+
+		va_u3_v4_1 = FactoryGirl.create(:visit_action, visit: visit_u3_4, url: "AppBuilder")
+		va_u3_v4_2 = FactoryGirl.create(:visit_action, visit: visit_u3_4, url: "AppBuilder/search")
 
 
 	end

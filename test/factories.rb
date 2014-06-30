@@ -6,5 +6,14 @@ FactoryGirl.define do
 		user_returning true 
 		user_visit_count 18
 	end 
+
+	factory :visit do
+		total_events 3
+		association :user
+	end
+
+	factory :visit_action do
+		association :visit
+	end
 	
 end

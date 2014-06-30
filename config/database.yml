@@ -12,6 +12,14 @@ default: &default
 development:
   <<: *default
   database: db/development.sqlite3
+  # adapter: sqlite3
+  # encoding: utf8
+  # reconnect: true
+  # database: log.db
+  # pool: 5
+  # timeout: 5000
+  # host: 127.0.0.1
+  # port: 8080
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -19,7 +27,23 @@ development:
 test:
   <<: *default
   database: db/test.sqlite3
+  # adapter: sqlite3
+  # encoding: utf8
+  # reconnect: true
+  # database: log.db
+  # pool: 5
+  # timeout: 5000
+  # host: 127.0.0.1
+  # port: 8080
 
 production:
   <<: *default
   database: db/production.sqlite3
+  # adapter: sqlite3
+  # encoding: utf8
+  # reconnect: true
+  # database: log.db
+  # pool: 5
+  # timeout: 5000
+  # host: 127.0.0.1
+  # port: 8080

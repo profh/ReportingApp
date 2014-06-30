@@ -1,10 +1,10 @@
 class User < ActiveRecord::Base
 	# relationships
 	has_many :visits
-	has_many :visit_actions, through: :visits
+	# has_many :visit_actions, through: :visits
 
 	# validations 
-	validates :user_visit_count, numericality: { greater_than_or_equal_to: 0, only_integer: true } 
+	validates :user_visit_count,  numericality: { greater_than_or_equal_to: 0, only_integer: true } 
 
 	# scopes 
 	# returns users who used AppBuilder in the past month
