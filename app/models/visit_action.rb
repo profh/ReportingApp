@@ -1,4 +1,9 @@
 class VisitAction < ActiveRecord::Base
+  # Add in modules to handle custom actions
+  # use extend rather than include b/c want methods to be class methods, not instance methods
+  extend Exceptions
+  extend QueryExecutor
+
 	# relationships
 	belongs_to :visit 
 	# belongs_to :user, through: :visit
@@ -40,9 +45,11 @@ class VisitAction < ActiveRecord::Base
 		return sum / pageviews.size
 	end
 
-	def self.pageviews(url)
+	def self.pageviews(url, new_db=nil)
+		connect_to_db(new_db) unless new_db.nil?
 		print VisitAction.with_url(url).size
 		return VisitAction.with_url(url).size
+		connect_to_db
 	end
 
 	def self.pageviews_percent(url)
