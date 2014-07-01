@@ -1,79 +1,39 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/helpers/application_helper.rb": [
+      "/Users/profh/Projects/ReportingApp/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/helpers/browsers_helper.rb": [
+      "/Users/profh/Projects/ReportingApp/app/helpers/browsers_helper.rb": [
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/helpers/events_helper.rb": [
+      "/Users/profh/Projects/ReportingApp/app/helpers/events_helper.rb": [
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/helpers/locations_helper.rb": [
+      "/Users/profh/Projects/ReportingApp/app/helpers/locations_helper.rb": [
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/helpers/performances_helper.rb": [
+      "/Users/profh/Projects/ReportingApp/app/helpers/performances_helper.rb": [
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/helpers/users_helper.rb": [
+      "/Users/profh/Projects/ReportingApp/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/helpers/visit_actions_helper.rb": [
+      "/Users/profh/Projects/ReportingApp/app/helpers/visit_actions_helper.rb": [
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/helpers/visits_helper.rb": [
+      "/Users/profh/Projects/ReportingApp/app/helpers/visits_helper.rb": [
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/models/browser.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/models/visit.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/models/event.rb": [
+      "/Users/profh/Projects/ReportingApp/app/models/browser.rb": [
         1,
         null,
         1,
@@ -91,16 +51,57 @@
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/models/visit_action.rb": [
+      "/Users/profh/Projects/ReportingApp/app/models/visit.rb": [
         1,
         null,
         1,
         1,
         1,
+        1,
         null,
         null,
         1,
         1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/profh/Projects/ReportingApp/app/models/event.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/profh/Projects/ReportingApp/app/models/visit_action.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
         null,
         null,
         null,
@@ -120,12 +121,25 @@
         null,
         null,
         null,
+        null,
+        null,
+        null,
+        null,
         1,
         0,
         0,
         0,
         0,
         null,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
         0,
         null,
         null,
@@ -135,25 +149,7 @@
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/models/location.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/models/performance.rb": [
+      "/Users/profh/Projects/ReportingApp/app/models/location.rb": [
         1,
         null,
         1,
@@ -171,11 +167,29 @@
         1,
         null
       ],
-      "/Users/aliceborie/Documents/IBM/technical/reporting/ReportingApp/app/models/user.rb": [
+      "/Users/profh/Projects/ReportingApp/app/models/performance.rb": [
         1,
         null,
         1,
+        null,
+        null,
         1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/profh/Projects/ReportingApp/app/models/user.rb": [
+        1,
+        null,
+        1,
+        null,
         null,
         null,
         1,
@@ -226,7 +240,7 @@
         null
       ]
     },
-    "timestamp": 1403788724
+    "timestamp": 1404224185
   },
   "Unit Tests": {
     "coverage": {
